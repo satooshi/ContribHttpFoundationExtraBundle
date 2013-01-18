@@ -1,12 +1,18 @@
 ContribHttpFoundationExtraBundle
 ================================
 
+## Install
+See [Packagist](https://packagist.org/packages/satooshi/symfony2contrib-http-foundation-extra-bundle).
+
+
 ## Annotation Usage
 
 This bundle contains @File annotation which can force to download a file.
 
 ```php
 # Your/Bundle/Controller/FileController.php
+
+use Contrib\HttpFoundationExtraBundle\Configuration\File;
 
 /**
  * @Route("/download", name="file_download")
@@ -34,6 +40,7 @@ public function downloadAction()
 
 ### todo
 
+* avoid HTTP header conflict if it has already been set
 * add supecific file type annotation support (@Plain, @Csv, @Pdf, @Zip, and so on)
 * add rendering template functionality as the same as @Template
 * add DependencyInjection/Cofiguration to support default parameter configuration
