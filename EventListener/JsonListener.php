@@ -46,22 +46,13 @@ class JsonListener
             return;
         }
 
-        if (isset($parameters['data'])) {
-            if (is_array($parameters['data'])) {
-
-            }
-            $data = $parameters['data'];
-        } else {
-            $data = array();
-        }
-
         if ($json->getSerialize()) {
             $serializer     = $this->getSerializer();
-            $serializedData = $serializer->serialize($data, 'json');
+            $serializedData = $serializer->serialize($parameters, 'json');
 
             $response = new Contrib\JsonResponse($serializedData);
         } else {
-            $response = new JsonResponse($data);
+            $response = new JsonResponse($parameters);
         }
 
         $callbackName = $json->getCallbackName();
