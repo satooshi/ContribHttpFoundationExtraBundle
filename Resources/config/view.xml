@@ -5,11 +5,17 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="contrib_http_foundation_extra.view.listener.class">Contrib\HttpFoundationExtraBundle\EventListener\FileListener</parameter>
+        <parameter key="contrib_http_foundation_extra.view.file.listener.class">Contrib\HttpFoundationExtraBundle\EventListener\FileListener</parameter>
+        <parameter key="contrib_http_foundation_extra.view.json.listener.class">Contrib\HttpFoundationExtraBundle\EventListener\JsonListener</parameter>
     </parameters>
 
     <services>
-        <service id="contrib_http_foundation_extra.view.listener" class="%contrib_http_foundation_extra.view.listener.class%">
+        <service id="contrib_http_foundation_extra.view.file.listener" class="%contrib_http_foundation_extra.view.file.listener.class%">
+            <tag name="kernel.event_listener" event="kernel.view" method="onKernelView" />
+            <argument type="service" id="service_container" />
+        </service>
+
+        <service id="contrib_http_foundation_extra.view.json.listener" class="%contrib_http_foundation_extra.view.json.listener.class%">
             <tag name="kernel.event_listener" event="kernel.view" method="onKernelView" />
             <argument type="service" id="service_container" />
         </service>
