@@ -18,6 +18,8 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
  * * filename: if this attr was set, this will be used as download filename.
  * * mimeType
  * * charset
+ *
+ * @author Kitamura Satoshi <with.no.parachute@gmail.com>
  */
 class FileResponse extends Response
 {
