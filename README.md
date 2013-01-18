@@ -10,7 +10,7 @@ See [Packagist](https://packagist.org/packages/satooshi/symfony2contrib-http-fou
 This bundle contains the following annotations.
 
 * @File: force to download a file.
-* @Json: creates JsonResponse with controller result.
+* @Json: create JsonResponse from controller result.
 	* Content-Type is
 		* application/json for json response
 		* text/javascript for jsonp response
