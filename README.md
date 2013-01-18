@@ -10,7 +10,7 @@ See [Packagist](https://packagist.org/packages/satooshi/symfony2contrib-http-fou
 This bundle contains @File annotation which can force to download a file.
 
 ```php
-# Your/Bundle/Controller/FileController.php
+# Acme/Bundle/Controller/FileController.php
 
 use Contrib\HttpFoundationExtraBundle\Configuration\File;
 
