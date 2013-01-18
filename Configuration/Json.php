@@ -13,30 +13,20 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ConfigurationAnnotation;
 class Json  extends ConfigurationAnnotation
 {
     /**
-     * Response content.
-     *
-     * @var array
-     */
-    protected $data;
-
-    /**
      * Whether to use serializer.
      *
      * @var boolean
      */
     protected $serialize = false;
 
+    /**
+     * Callback name in request parameter.
+     *
+     * @var string
+     */
+    protected $callbackName = 'callback';
+
     // accessor
-
-    public function setData($data)
-    {
-        $this->data = $data;
-    }
-
-    public function getData()
-    {
-        return $this->data;
-    }
 
     public function setSerialize($serialize)
     {
@@ -46,6 +36,16 @@ class Json  extends ConfigurationAnnotation
     public function getSerialize()
     {
         return $this->serialize;
+    }
+
+    public function setCallbackName($callbackName)
+    {
+        $this->callbackName = $callbackName;
+    }
+
+    public function getCallbackName()
+    {
+        return $this->callbackName;
     }
 
     /**

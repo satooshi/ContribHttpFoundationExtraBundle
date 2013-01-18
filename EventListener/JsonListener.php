@@ -59,10 +59,19 @@ class JsonListener
             $serializer     = $this->getSerializer();
             $serializedData = $serializer->serialize($data, 'json');
 
-            $event->setResponse(new Contrib\JsonResponse($serializedData));
+            $response = new Contrib\JsonResponse($serializedData);
         } else {
-            $event->setResponse(new JsonResponse($data));
+            $response = new JsonResponse($data);
         }
+
+        $callbackName = $json->getCallbackName();
+        $callback     = $request->get($callbackName, null);
+
+        if ($callback !== null) {
+            $response->setCallback($callback);
+        }
+
+        $event->setResponse($response);
     }
 
     /**
