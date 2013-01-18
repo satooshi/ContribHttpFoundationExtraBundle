@@ -85,7 +85,7 @@ class SiteController
 
 ### @Json parameters
 
-* callbackName: optional callback request parameter name.
+* callbackName: optional callback request parameter name (default value: callback).
 * serialize: optional boolean whether to use serializer ([jms/serializer](https://github.com/schmittjoh/serializer)).
 
 ### todo
