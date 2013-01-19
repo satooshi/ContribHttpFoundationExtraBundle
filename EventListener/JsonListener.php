@@ -47,7 +47,13 @@ class JsonListener
         }
 
         if ($json->getSerialize()) {
-            $serializer     = $this->getSerializer();
+            $serializer = $this->getSerializer();
+
+            if ($json->hasSeializeGroups()) {
+                $groups = $json->getSerializeGroups();
+                $serializer->setGroups($groups);
+            }
+
             $serializedData = $serializer->serialize($parameters, 'json');
 
             $response = new Contrib\JsonResponse($serializedData);

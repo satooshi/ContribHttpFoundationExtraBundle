@@ -87,6 +87,7 @@ class SiteController
 
 * callbackName: optional callback request parameter name (default value: callback).
 * serialize: optional boolean whether to use serializer ([jms/serializer](https://github.com/schmittjoh/serializer)).
+* serializeGroups: optional array to use serialize group.
 
 ### todo
 

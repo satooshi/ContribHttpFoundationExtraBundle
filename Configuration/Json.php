@@ -20,6 +20,13 @@ class Json  extends ConfigurationAnnotation
     protected $serialize = false;
 
     /**
+     * Serialize groups.
+     *
+     * @var array
+     */
+    protected $serializeGroups;
+
+    /**
      * Callback name in request parameter.
      *
      * @var string
@@ -36,6 +43,21 @@ class Json  extends ConfigurationAnnotation
     public function getSerialize()
     {
         return $this->serialize;
+    }
+
+    public function setSerializeGroups($serializeGroups)
+    {
+        $this->serializeGroups = $serializeGroups;
+    }
+
+    public function getSerializeGroups()
+    {
+        return $this->serializeGroups;
+    }
+
+    public function hasSeializeGroups()
+    {
+        return isset($this->serializeGroups) && count($this->serializeGroups) > 0;
     }
 
     public function setCallbackName($callbackName)
