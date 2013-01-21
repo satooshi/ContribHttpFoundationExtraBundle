@@ -72,7 +72,7 @@ class JsonListener
     }
 
     /**
-     * @return JMS\Serializer\Serializer
+     * @return JMS\SerializerBundle\Serializer
      */
     protected function getSerializer()
     {
