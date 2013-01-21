@@ -76,6 +76,6 @@ class JsonListener
      */
     protected function getSerializer()
     {
-        return $this->container->get('jms_serializer');
+        return $this->container->get('serializer');
     }
 }
