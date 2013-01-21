@@ -1,6 +1,6 @@
 <?php
 
-namespace Contrib\HttpFoundationExtraBundle\Configuration;
+namespace Contrib\Bundle\HttpFoundationExtraBundle\Configuration;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\ConfigurationAnnotation;
 

@@ -5,8 +5,8 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="contrib_http_foundation_extra.view.file.listener.class">Contrib\HttpFoundationExtraBundle\EventListener\FileListener</parameter>
-        <parameter key="contrib_http_foundation_extra.view.json.listener.class">Contrib\HttpFoundationExtraBundle\EventListener\JsonListener</parameter>
+        <parameter key="contrib_http_foundation_extra.view.file.listener.class">Contrib\Bundle\HttpFoundationExtraBundle\EventListener\FileListener</parameter>
+        <parameter key="contrib_http_foundation_extra.view.json.listener.class">Contrib\Bundle\HttpFoundationExtraBundle\EventListener\JsonListener</parameter>
     </parameters>
 
     <services>

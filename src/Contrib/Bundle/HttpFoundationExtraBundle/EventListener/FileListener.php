@@ -1,11 +1,11 @@
 <?php
 
-namespace Contrib\HttpFoundationExtraBundle\EventListener;
+namespace Contrib\Bundle\HttpFoundationExtraBundle\EventListener;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForControllerResultEvent;
-use Contrib\HttpFoundationExtraBundle\HttpFoundation\FileResponse;
-use Contrib\HttpFoundationExtraBundle\Configuration\File;
+use Contrib\Bundle\HttpFoundationExtraBundle\HttpFoundation\FileResponse;
+use Contrib\Bundle\HttpFoundationExtraBundle\Configuration\File;
 
 /**
  * The FileListener class handles the @File annotation.

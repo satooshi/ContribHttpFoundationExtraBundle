@@ -1,6 +1,6 @@
 <?php
 
-namespace Contrib\HttpFoundationExtraBundle\DependencyInjection;
+namespace Contrib\Bundle\HttpFoundationExtraBundle\DependencyInjection;
 
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;

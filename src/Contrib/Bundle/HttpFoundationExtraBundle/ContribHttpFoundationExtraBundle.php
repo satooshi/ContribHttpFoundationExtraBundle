@@ -1,6 +1,6 @@
 <?php
 
-namespace Contrib\HttpFoundationExtraBundle;
+namespace Contrib\Bundle\HttpFoundationExtraBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

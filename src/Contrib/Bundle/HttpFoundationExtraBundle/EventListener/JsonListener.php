@@ -1,13 +1,13 @@
 <?php
 
-namespace Contrib\HttpFoundationExtraBundle\EventListener;
+namespace Contrib\Bundle\HttpFoundationExtraBundle\EventListener;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForControllerResultEvent;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Contrib\HttpFoundationExtraBundle\Configuration\Json;
-use Contrib\HttpFoundationExtraBundle\HttpFoundation as Contrib;
+use Contrib\Bundle\HttpFoundationExtraBundle\Configuration\Json;
+use Contrib\Bundle\HttpFoundationExtraBundle\HttpFoundation as Contrib;
 
 /**
  * The JsonListener class handles the @Json annotation.

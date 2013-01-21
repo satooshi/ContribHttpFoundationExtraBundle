@@ -18,8 +18,8 @@ This bundle contains the following annotations.
 ```php
 # Acme/Bundle/Controller/SiteController.php
 
-use Contrib\HttpFoundationExtraBundle\Configuration\File;
-use Contrib\HttpFoundationExtraBundle\Configuration\Json;
+use Contrib\Bundle\HttpFoundationExtraBundle\Configuration\File;
+use Contrib\Bundle\HttpFoundationExtraBundle\Configuration\Json;
 
 /**
  * @Route("/site")

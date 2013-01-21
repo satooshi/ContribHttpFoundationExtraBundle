@@ -1,6 +1,6 @@
 <?php
 
-namespace Contrib\HttpFoundationExtraBundle\HttpFoundation;
+namespace Contrib\Bundle\HttpFoundationExtraBundle\HttpFoundation;
 
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
